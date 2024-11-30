@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моите бижута</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+            gap: 15px;
+        }
+        .item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.2s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .item h3 {
+            font-size: 1.1em;
+            margin: 10px 0;
+            color: #333;
+        }
+        .item p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .item .buy-button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.2s;
+        }
+        .item .buy-button:hover {
+            background-color: #555;
+        }
+        .contact-form {
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 600px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Моите ръчно изработени бижута</h1>
+        <p>Красота и уникалност във всяко изделие</p>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <div class="item">
+                <img src="bracelet.jpg" alt="Гривна">
+                <h3>Ръчно изработена гривна</h3>
+                <p>Цена: 25 лв.</p>
+                <a href="https://example-shop.com/bracelet" class="buy-button" target="_blank">Купи сега</a>
+            </div>
+            <div class="item">
+                <img src="earrings.jpg" alt="Обеци">
+                <h3>Изискани обеци</h3>
+                <p>Цена: 30 лв.</p>
+                <a href="https://example-shop.com/earrings" class="buy-button" target="_blank">Купи сега</a>
+            </div>
+            <div class="item">
+                <img src="necklace.jpg" alt="Колие">
+                <h3>Стилно колие</h3>
+                <p>Цена: 40 лв.</p>
+                <a href="https://example-shop.com/necklace" class="buy-button" target="_blank">Купи сега</a>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Свържете се с нас</h2>
+            <form action="mailto:info@example.com" method="post" enctype="text/plain">
+                <label for="name">Вашето име:</label>
+                <input type="text" id="name" name="name" placeholder="Име" required>
+                <label for="email">Вашият имейл:</label>
+                <input type="email" id="email" name="email" placeholder="Имейл" required>
+                <label for="message">Вашето съобщение:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Напишете вашето съобщение тук..." required></textarea>
+                <button type="submit">Изпрати</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Моите бижута | Свържете се с нас на: info@example.com</p>
+    </footer>
+</body>
+</html>
